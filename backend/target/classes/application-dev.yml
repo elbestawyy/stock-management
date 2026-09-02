@@ -23,7 +23,12 @@ management:
   endpoints:
     web:
       exposure:
-        include: health
+        include:
+          - health
+          - info
+          - metrics
+          - mappings
+          - loggers
   endpoint:
     health:
       show-details: always
